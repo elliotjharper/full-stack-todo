@@ -1,0 +1,19 @@
+# .NET build artifacts
+TodoApi/bin/
+TodoApi/obj/
+TodoApi/data/
+
+# Angular build artifacts and dependencies
+todo-client/node_modules/
+todo-client/dist/
+todo-client/.angular/
+
+# IDE
+.vscode/
+.idea/
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+TodoApi/.vs

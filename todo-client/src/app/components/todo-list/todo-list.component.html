@@ -1,0 +1,17 @@
+<div class="todo-list">
+    <p class="todo-summary" *ngIf="todos.length > 0">
+        {{ pendingCount() }} of {{ todos.length }} remaining
+    </p>
+
+    <p class="todo-empty" *ngIf="todos.length === 0">
+        No todos yet — add one above!
+    </p>
+
+    <app-todo-item
+        *ngFor="let todo of todos"
+        [todo]="todo"
+        (toggleComplete)="onToggle($event)"
+        (deleteTodo)="onDelete($event)"
+    >
+    </app-todo-item>
+</div>

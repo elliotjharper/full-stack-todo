@@ -1,0 +1,18 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.todo-summary {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.todo-empty {
+    text-align: center;
+    color: #aaa;
+    padding: 24px 0;
+    font-size: 0.95rem;
+}

@@ -1,0 +1,13 @@
+<form class="add-todo-form" (ngSubmit)="onSubmit()">
+    <input
+        type="text"
+        class="add-todo-input"
+        [(ngModel)]="newTitle"
+        name="newTitle"
+        placeholder="What needs to be done?"
+        autocomplete="off"
+    />
+    <button type="submit" class="btn-add" [disabled]="!newTitle.trim()">
+        Add
+    </button>
+</form>
