@@ -1,0 +1,11 @@
+<div class="todo-item" [class.completed]="todo.isComplete">
+  <input
+    type="checkbox"
+    [checked]="todo.isComplete"
+    (change)="onToggle()"
+    class="todo-checkbox"
+    [attr.aria-label]="'Mark ' + todo.title + ' as complete'"
+  />
+  <span class="todo-title">{{ todo.title }}</span>
+  <button class="btn-delete" (click)="onDelete()" aria-label="Delete todo">✕</button>
+</div>
