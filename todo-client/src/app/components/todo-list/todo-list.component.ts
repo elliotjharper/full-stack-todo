@@ -2,9 +2,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TodoItem } from '../../models/todo-item.model';
 
 @Component({
-  selector: 'app-todo-list',
-  templateUrl: './todo-list.component.html',
-  styleUrl: './todo-list.component.css'
+    selector: 'app-todo-list',
+    templateUrl: './todo-list.component.html',
+    styleUrl: './todo-list.component.css',
+    standalone: false
 })
 export class TodoListComponent {
   @Input() todos: TodoItem[] = [];
